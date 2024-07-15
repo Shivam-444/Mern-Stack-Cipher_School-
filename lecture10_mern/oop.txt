@@ -1,0 +1,20 @@
+Objects: It is a unique entity that contains some properties and methods.
+Object can be created in two ways:-
+1. Object Literal
+2. Object Constructor
+3. Object.create()
+
+Class: Classes are blueprints of an object.
+*There are no classes in JS we only have Objects.
+*JS is a Prototype based object oriented language.
+
+Abstraction: It means displaying only the essential information and hiding the details.
+Encapsulation: The process of wrapping properties and functions within a single unit is called encapsulation.
+Note: In JS, there are no access modifiers.
+Inheritance
+Polymorphism
+
+MERN-MongoDB,Express,React,NodeJS
+MERN stack is a JS stack that is used for easier and faster deployement of full stack web appliocations.
+MERN is designed to make the development process smoother and easier.
+Each of four technologies provide end to dne framework for the developers.
