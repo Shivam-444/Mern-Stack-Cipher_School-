@@ -1,0 +1,68 @@
+import {useState} from "react";
+import Task from "../Components/Task";
+//import {Component} from "react";
+
+// class ToDoScreen extends Component{
+//     state = {
+//     taskCount: 0,
+//     };
+
+
+//     render(){
+//         return (
+//         <div className="screen">
+//             <h1 className="ui heading center">To Do List</h1>
+//             <button
+//              onClick={(e)=>{
+//                 this.setState({...this.state, taskCount: this.state.taskCount +1});
+//                 console.log("this.state.taskCount");
+//              }} 
+//              className="ui secondary button">Add Task
+//              </button>
+//              <p>The number of tasks are: {this.state.taskCount}</p>
+//         </div>
+//         );    
+//     }
+// }
+
+const ToDoScreen = () => {
+    // const[taskCount, setTaskCount] = useState(0);
+    const [taskList, setTaskList] = useState([]);
+    return(
+        <div className="screen">
+            <h1 className="ui heading center">To Do List</h1>
+            <div>
+             <button
+              onClick={(e)=>{
+                //  this.setState({...this.state, taskCount: this.state.taskCount +1});
+                //  console.log("this.state.taskCount");
+
+                // setTaskCount(taskCount + 1);
+
+                setTaskList([
+                    ...taskList,
+                    {
+                        title: "Go to Gym",
+                        description: "Going to gym daily is good for health.",
+                        createdDate: new Date(),
+                    },
+                ]);
+              }}
+              className="ui secondary button"
+              >
+                Add Task
+              </button>
+              <section>
+              <div class="ui cards">
+              {taskList.map((task, index) => (<Task task={task} key={index}/>
+              ))}
+              </div>
+              </section> 
+            </div>
+        </div>
+    );
+}
+
+
+
+export default ToDoScreen;

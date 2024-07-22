@@ -1,0 +1,6 @@
+React components are like functions.
+They contain some logical code and return some UI.
+Just like functions, they accept arguments that contain the UI/logic of the component.
+Rendering a function is like calling a function.
+
+In react, a component can be reprsented by a JS class or a JS function.
